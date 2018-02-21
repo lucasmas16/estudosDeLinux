@@ -1,0 +1,98 @@
+"comando" --help -> mostra o menu de ajuda do comando
+
+man "comando" -> mostra um guia de uso do comando
+
+date -> mostra a data do sistema
+
+df -> mostra relatório de partições usadas
+
+diff arquivo1 arquivo2 -> mostra a diferença entre arquivos
+
+du diretorio -> mostra o tamanho do diretorio
+
+file "nome do arquivo" -> mostra informacoes do arquivo
+
+find /home name "x" -> busca nome x dentro da pasta
+find /home type "x" -> busca tipo x dentro da pasta
+find /home size "x" -> busca tamanho x dentro da pasta
+find /home mtime "x" -> busca a data de modificação dentro da pasta
+find parametro "x" -> busca o parametro x no diretorio atual
+
+finger usuário -> exibe as informações do usuário
+
+halt -> desliga o computador
+reboot -> reinicia o computador
+
+free -> exibe um relatório sobre a memoria ram e swap da maquina
+
+top -> exibe a lista de processos a partir dos que estao consumino mais
+
+ps -> mostra os processo que estão em execusão
+
+history -> mostra os ultimos comando usados
+
+id "usuario" -> mostra a ID do usuário na maquina
+id -> mostra lista de usuário da maquina
+
+su -> muda para o usuario adm
+
+useradd "usuario" -> adiciona o usuario especificado ao sistema
+
+userdel "usuario" -> deleta o usuario especificado
+
+w -> mostra os usuario logados, usado muito em servidores
+
+who -> mostra quem está usando o sistema de forma mais simplificada
+
+cd -> navegação em pastas
+cd .. -> voltar para pasta anterior
+cd tab tab -> mostra as opções de pasta disponiveis
+
+ls -> mostra arquivos e pastas do diretorio
+
+ll -> mostra os arquivos e pastas mas em formato de lista
+
+lpr "arquivo" -> imprime o arquivo especificado
+
+lpq -> mostra a fila de impressao
+
+lprm -> remove os trabalhos da fila de impressão
+
+ln -s "diretorio de origem" "diretorio de destino" -> cria um link com o diretorio destino - para remover usar rm -r no destino
+
+passwd -> muda a senha do usuario
+
+pwd -> mostra o caminho do diretorio
+
+mkdir "nome da pasta" -> cria uma pasta no diretorio
+
+touch "nome do arquivo" -> cria o arquivo no diretorio
+
+chown user pasta -> o dona da pasta será o usuário informado
+
+cp "arquivo" "destino" -> copia o arquivo selecionado para a pasta de destino especificada
+cp -R "pasta origem" "destino" -> copia o diretorio para o diretorio destino, "R" de forma recurciva
+
+mv "arquivo" "destino" -> move o arquivo para o local especificado
+mv -f "arquivo" "destino" -> força a movimentação de arquivos sobrescrevendo caso necessario
+
+rm "meu arquivo" -> deleta o arquivo do diretorio
+rm -rf "/minha pasta" -> deleta a pasta do diretorio o "r" é para deletar o que estiver dentro de forma redundante e o "f" é para forçar a operacao
+
+ctrl + L -> limpa a tela
+
+dpkg --info "nome do pacote.deb" -> mostra informacoes sobre o pacote presente no diretorio
+dpkg -i ou --install "nome do pacote.deb" -> instala o pacote presente dentro do diretorio
+dpkg -r ou --remove "nome do pacote" -> remove o pacote mas mantem os arquivos de configuracao
+dpkg -p ou --purge "nome do pacote" -> remove complatamente o pacote e os arquivos de configuracao
+dpkg --force-overwrite "nome do pacote" -> forca a instalacao do pacote sobrescrevendo possiveis conflitos
+
+apt-get update -> atualiza a lista de pacotes de acordo com a lista mais atual no servidor 
+apt-get install "nome do pacote" -> instala o pacote escolhido de acordo com a listagem em cache
+apt-get -f install "nome do pacote" -> instala o pacote escolhido e forca a instalacao de pacotes dependentes
+apt-get remove "nome do pacote" -> remove o pacote escolhido
+apt-get autoremove "nome do pacote" -> remove o pacote escolhido e possiveis pacotes dependentes
+
+apt-cache seach "nome do pacote" -> procura o pacote na listagem em cache
+apt-cache show -> mostra a lista de app que estao em cache
+
